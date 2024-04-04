@@ -1,0 +1,293 @@
+:root{
+  --main-color: #2a201c;
+  --primary-color: #ffd11a;
+  --black: #000000;
+  --sap-green: #507d2a;
+  --hover: #e6800b ;
+  --white: #fff;
+  --light-bg: #f3efec;
+  --dark-bg: rgba(0,0,0,.7);
+  --border:.1rem solid #aaa;
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: all .2s linear;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+html::-website-scrollbar{
+   width: .6rem;
+}
+
+html::-website-scrollbar-track{
+  background-color: var(--main-color);
+}
+
+html::-website-scrollbar-thumb{
+  background-color: var(--primary-color);
+}
+
+section{
+  padding: 5rem 7%;
+}
+/* header */ 
+
+.header{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top:0;
+  left:0; right:0;
+  background-color: var(--main-color);
+  z-index: 1000;
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: var(--primary-color);
+  text-transform: capitalize;
+}
+
+.header .navbar a{
+  font-size: 2rem;
+  margin-left: 2rem;
+  color: var(--primary-color);
+  text-transform: capitalize;
+  border-radius: .5rem
+}
+
+.header .navbar a:hover{
+  background-color: var(--hover);
+  color: #fff;
+}
+
+/* home */
+.Home{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("https://img.freepik.com/free-psd/3d-rendering-beauty-banner_23-2150159867.jpg?w=740&t=st=1711777089~exp=1711777689~hmac=5361322ef9ee8dd0cfd418bacf394ede4f682c7b60c9c9c16229ecbc39d056d5");
+  background-size: cover;
+  background-position: center;
+}
+.Home .content{
+  max-width: 60rem;
+}
+.Home .content h3{
+  color: var(--white);
+  text-decoration: none;
+  letter-spacing: .3rem;
+  align-items: center;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+/* About us */ 
+
+.About{
+  background-repeat: no-repeat;
+  background-position: left bottom;
+}
+
+.About .row{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.About .row .image{
+  flex: 1 1 39rem;
+}
+
+.About .row .image img{
+  width: 100%;
+}
+
+.About .row .content{
+  flex: 1 1 51rem;
+  padding: 5rem;
+}
+
+.About .row .content h3{
+  font-size: 3rem;
+  color: var(--sap-green);
+}
+
+.About .row .content p{
+  font-size: 2rem;
+  color: var(--black);
+  word-spacing: .5rem;
+  font-weight: bolder;
+  padding: 1rem 0;
+  line-height: 1.8;
+}
+
+.About .heading{
+  font-size: 4rem;
+  color: var(--sap-green);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  text-decoration: underline;
+}
+
+.Services .heading{
+  font-size: 4rem;
+  color: var;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  text-decoration: underline;
+}
+
+.Services .content p{
+  font-size: 2rem;
+  color: var(--white);
+  word-spacing: .5rem;
+  font-weight: bolder;
+  padding: 1rem 0;
+  line-height: 1.8; 
+  background-color: rgba(0, 255, 0, 0.29);
+}
+
+.Services{
+  display: flex;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpOWQ0USFhYr092IJWYQyp2izS8EfoCQhZYD5eKD2vv1xF1Uqw4trsvIP7uNhFS6J1YQY&usqp=CAU);opacity: 90%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+}
+
+.Contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url(https://img.freepik.com/premium-photo/website-internet-contact-us-page-concept-with-phone-chat-email-icons-symbol-telephone-mail-mobile-phone-website-page-contact-us-wide-web-banner-copy-space-blue-background_256259-2730.jpg);
+  background-size: cover;
+}
+
+.Contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+
+
+.Contact .content h2{
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--white);
+  text-transform: capitalize;
+}
+
+.Contact .content p{
+  font-weight: 300;
+  color: var(--white);
+  font-size: 24px;
+}
+.container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .contactInfo{
+  width: 50;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box{
+  position: relative;
+  padding: 20px 0px;
+  display: flex;
+  
+}
+.container .contactInfo .box .text{
+  display: flex;
+  margin-left: 20px;
+  font-size: 16px;
+  color: var(--black);
+  background-color: var(--white);
+  border-radius: .7rem;
+  flex-direction: column;
+  font-weight: 300;
+}
+.container .contactInfo .box .text h3{
+  font-weight: 500;
+  color: #00bcd4;
+}
+
+.container .contactInfo .box .text a{
+  color: blue;
+  text-decoration: underline;
+}
+
+.Updates{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 50px, 100px;
+}
+
+.Updates .heading{
+  font-size: 4rem;
+  color: var(--sap-green);
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  text-decoration: underline;
+}
+.Updates .content p{
+  font-size: 25px;
+  color: var(--black);
+  word-spacing: .5rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  line-height: 1.8;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.Updates .content a{
+  font-size: 50px;
+  padding-top: 20px;
+  padding-left: 50px;
+  line-height: 1.8;
+  word-spacing: .3rem;
+  color: blue;
+}
+
+.Updates .content a:hover{
+  background-color: blue;
+  color: var(--white);
+  border-radius: .7rem;
+  justify-content: center;
+}
